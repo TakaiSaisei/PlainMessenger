@@ -29,6 +29,7 @@ class MessagesController < ApplicationController
     @message.save
 
     SendMessageJob.perform_later(@message)
+
   end
 
   # PATCH/PUT /messages/1
