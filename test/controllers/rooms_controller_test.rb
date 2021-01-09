@@ -3,8 +3,6 @@
 require 'test_helper'
 
 class RoomsControllerTest < ActionDispatch::IntegrationTest
-  include Devise::Test::IntegrationHelpers
-
   # логинимся и получаем нужную страницу
   test 'should get index' do
     get '/users/sign_in'

@@ -21,5 +21,4 @@ class RoomsTest < ApplicationSystemTestCase
 
     assert_text 'Room test'
   end
-
 end

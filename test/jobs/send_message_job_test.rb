@@ -3,7 +3,6 @@
 require 'test_helper'
 
 class SendMessageJobTest < ActiveJob::TestCase
-
   setup do
     @message = messages(:one)
   end
@@ -16,5 +15,4 @@ class SendMessageJobTest < ActiveJob::TestCase
       assert_performed_jobs 1
     end
   end
-
 end

@@ -18,5 +18,4 @@ class MessagesTest < ApplicationSystemTestCase
 
     assert_text 'Message test'
   end
-
 end

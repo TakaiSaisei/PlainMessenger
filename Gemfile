@@ -60,5 +60,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootstrap'
 gem 'devise'
 gem 'jquery-rails'
-gem 'simple_form'
 gem 'rails-i18n'
+gem 'simple_form'

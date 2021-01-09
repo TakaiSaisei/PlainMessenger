@@ -1,8 +1,8 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class SetLanguageControllerTest < ActionDispatch::IntegrationTest
-  include Devise::Test::IntegrationHelpers
-
   setup do
     get '/users/sign_in'
     sign_in users(:one)
@@ -10,13 +10,13 @@ class SetLanguageControllerTest < ActionDispatch::IntegrationTest
   end
 
   # проверяем переключение на английскую локаль
-  test "should get english" do
+  test 'should get english' do
     get set_language_english_url
     assert_response :redirect
   end
 
   # проверяем переключение на русскую локаль
-  test "should get russian" do
+  test 'should get russian' do
     get set_language_russian_url
     assert_response :redirect
   end
