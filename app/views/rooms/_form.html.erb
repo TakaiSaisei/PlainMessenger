@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="input-group">
-    <%= form.text_field :name, placeholder: "Name", class: 'form-control' %>
+    <%= form.text_field :name, placeholder: "#{t 'add_room_hint'}", class: 'form-control' %>
   </div>
 
   <div class="input-group-append">
-    <%= form.submit "Add room", class: "btn btn-primary btn-block" %>
+    <%= form.submit "#{t 'add_room_btn'}", class: "btn btn-primary btn-block" %>
   </div>
 
 <% end %>

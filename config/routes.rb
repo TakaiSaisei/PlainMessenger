@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'set_language/english'
+  get 'set_language/russian'
   resources :messages
   resources :rooms
   devise_for :users

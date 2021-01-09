@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <div id="language-chooser">
+        <%= link_to_unless I18n.locale == :en, "English", set_language_english_path %>
+        |
+        <%= link_to_unless I18n.locale == :ru, "Russian", set_language_russian_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

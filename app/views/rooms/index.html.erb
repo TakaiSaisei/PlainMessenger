@@ -13,7 +13,7 @@
             <div class="card-body">
               <span class="name"><%= room.name %></span><br>
               <span class="users-count">
-                <%= room.users.uniq.count %> users
+                <%= room.users.uniq.count %> <%= t 'users_count' %>
               </span>
             </div>
           </div>
@@ -26,7 +26,7 @@
           <span class="navbar-brand"><%= @room.try(:name) %></span>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <%= current_user.username %> <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+              <%= current_user.username %> <%= link_to("#{t 'logout'}", destroy_user_session_path, method: :delete) %>
             </li>
           </ul>
         </nav>

@@ -14,9 +14,9 @@
   <%= form.hidden_field :room_id, value: room.id %>
 
   <div class="input-group">
-    <%= form.text_field :content, placeholder: "Type your message here...", class: 'form-control' %>
+    <%= form.text_field :content, placeholder: "#{t 'msg_hint'}", class: 'form-control' %>
     <div class="input-group-append">
-      <%= form.submit "Send", class: "btn btn-primary", id: 'chat-btn' %>
+      <%= form.submit "#{t 'msg_send'}", class: "btn btn-primary", id: 'chat-btn' %>
     </div>
   </div>
 <% end %>

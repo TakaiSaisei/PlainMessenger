@@ -6,6 +6,13 @@ body {
   -ms-overflow-style: none;
 }
 
+#language-chooser {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 1;
+}
+
 .chat-room {
   height: 100vh;
 

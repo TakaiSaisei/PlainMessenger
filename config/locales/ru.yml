@@ -1,0 +1,7 @@
+ru:
+  add_room_hint: "Название"
+  add_room_btn: "Создать комнату"
+  users_count: "пользователей"
+  msg_hint: "Введите ваше сообщение здесь..."
+  msg_send: "Отправить"
+  logout: "Выйти"
