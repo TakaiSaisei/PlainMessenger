@@ -26,7 +26,8 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     @message.user = current_user
-    @message.save
+    @message.room = Room.find(session[:current_room_id])
+    @message.save!
 
     SendMessageJob.perform_later(@message)
   end
