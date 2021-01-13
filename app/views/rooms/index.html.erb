@@ -32,7 +32,9 @@
         </nav>
         <% if @room.present? %>
           <div id="messages">
-            <% @room.messages.each do |message| %>
+            <% @messages = @room.messages.order('created_at DESC').paginate(page: params[:page], per_page: 15) %>
+            <%= will_paginate @messages %>
+            <% @messages.reverse.each do |message| %>
               <%= render 'messages/message', message: message %>
             <% end %>
           </div>

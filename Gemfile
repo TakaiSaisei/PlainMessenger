@@ -58,7 +58,9 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'bootstrap'
+gem 'bootstrap-will_paginate'
 gem 'devise'
 gem 'jquery-rails'
 gem 'rails-i18n'
 gem 'simple_form'
+gem 'will_paginate'
